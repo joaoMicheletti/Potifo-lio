@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#Section01{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/backgrund01.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#DivSection01{
+    padding-top: 80px;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+#Logo01{
+    width: 30%;
+}
+#PDivSection01 {
+    color: white;
+    font-size: 31px;
+    margin-top: 30px;
+}
+#TxtProp {
+    width: 50%;
+}
+#Verificados {
+    margin-top: 50px;
+    width: 60%;
+}
+#FooterSection01 {
+    box-shadow: 0 -6px 6px rgba(10, 182, 212, 0.2); /* Adiciona sombra na parte de cima */
+    background: linear-gradient(to right, #3e2c4d, #3e6061);
+    position: absolute;
+    bottom: 0; /* Posiciona a div no final da section */
+    left: 0; /* Alinha a div à esquerda */
+    width: 100%; /* Opcional, se você quiser que a div ocupe toda a largura */
+    height: 40px;
+    text-align: center; /* Opcional, para centralizar o conteúdo dentro da div */
+}
+#FooterSection01 p {
+    text-align: center;
+    padding-top: 10px;
+}
+@media(max-width: 600px){
+    #DivSection01{
+        padding-top: 150px;
+        width: 100%;
+        margin-left: 0%;
+    }
+    #Logo01 {
+        width: 50%;
+    }
+    #PDivSection01 {
+        font-size: 20px;
+    }
+    #TxtProp {
+        width: 90%;
+    }
+    #Verificados {
+        width: 90%;
+    }
+    #FooterSection01 {
+        height: 50px;
+        font-family: 18px;
+    }
+
+}
+#Section02{
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+}
+#DivSetcion02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    width: 80%;
+    margin-left: 10%;
+}
+#TxtDiv02{
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+}
+#ImgPerform {
+    padding-top: 80px;
+    width: 80%;
+    transform: translateY(100px); /* Começa fora da posição visível */
+    animation: subir 2.5s ease-out forwards; /* Chama a animação ao carregar */
+}
+@keyframes subir {
+    0% {
+      opacity: 0;
+      transform: translateY(100px); /* Abaixo da posição final */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* Posição final no centro */
+    }
+}
+@media(min-width:600px){
+    #DivSetcion02{
+        padding-top: 80px;
+    }
+    #TxtDiv02{
+        width: 100%;
+    }
+    #ImgPerform {
+        padding-top: 80px;
+        width: 50%;
+    }
+}
+#Section03 {
+    width: 100%;
+    width: auto;
+    background-color: #000000;
+}
+
+#DivSection03{
+    width: 80%;
+    margin-left: 10%;
+}
+.DivSection03a {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+
+.ContentSection03 {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-bottom: 80px; 
+    background: linear-gradient(to right, #3e2c4d, #3e6061);
+    border-radius: 15px;
+    box-shadow: 4px 4px 5px rgb(124, 75, 180);
+}
+.ImgContentSection03{
+    padding-top: 20px;
+    margin-left: 40%;
+    width: 20%;
+}
+.H2Section03{
+    padding-top: 20px;
+    padding-bottom: px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.PContentSeciotn03 {
+    margin-left: 20px;
+    margin: 20px;
+    text-align: left;
+    padding-bottom: 5px;
+}
+@media(max-width: 600px){
+    .DivSection03a {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin-left: 5%;
+        justify-content: space-around;
+    }
+    .ContentSection03{
+        width: 80%;
+        margin-left: 10%
+    }
+}
+/* Estilo geral da seção */
+#SectionNossosProdutos {
+    width: 100%;
+    text-align: center;
+    background-color: #000000;
+}
+
+/* Estilo para o título */
+#H2SectionNossosProdutos {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Estilo do carrossel */
+#CarrosselSectionNossosProdutos {
+    width: 100%;
+    overflow: hidden; /* Esconde o conteúdo que sai da área visível */
+}
+
+/* Container das imagens */
+#CarrosselSectionNossosProdutos .carousel-track {
+    display: flex;
+    animation: slide 10s linear infinite; /* Define o movimento contínuo */
+}
+
+/* Estilo das imagens */
+.ImgCarrosselSectionNosso {
+    border-radius: 10px;
+    width: 33.33%; /* As imagens ocupam todo o espaço, com um espaçamento de 1/3 */
+    object-fit: cover; /* Para ajustar as imagens sem distorção */
+}
+@media(max-width:600px){
+    .ImgCarrosselSectionNosso{
+        width: 50%;
+    }
+}
+
+/* Animação para mover as imagens */
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Move todo o track para a esquerda */
+    }
+}
+
+/* Fim da animação com um ciclo infinito */
+#SectionJhon{
+    width: 100%;
+    height: auto;
+    background-image: url(./assets/johnbackgrund.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#DivSectionJhon {
+    padding-top: 100px;
+    width: 50%;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: row;
+}
+#TxtJhon{
+    width: 90%;
+    margin-left: 5%;
+}
+#TxtJhon h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#TxtJhon p {
+    font-size: 18px;
+}
+@media(max-width: 600px){
+    #SectionJhon{
+        width: 100%;
+        height: auto;
+        background-image: url(./assets/fundoJhonMobile.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #DivSectionJhon {
+        padding-top: 300px;
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row;
+    }
+    #TxtJhon{
+        width: 100%;
+    }
+    #TxtJhon h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    #TxtJhon p {
+        font-size: 18px;
+    }
+}
+#Phone {
+    padding-top: 180px;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./assets/backPhone.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width: 600px){
+    #Phone {
+        padding-top: 180px;
+        width: 100%;
+        height: 100vh;
+        background-image: url(./assets/backphonemobille.png);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+#Steps{
+    padding-top: 50px;
+    width: 100%;
+    background-color:rgb(0, 0, 0) ;
+}
+#DivSteps {
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.ContentSteps {
+    width: 30%;
+    text-align: center;
+    background: linear-gradient(to right, #3e2c4d, #3e6061);
+    border-radius: 15px;
+}
+.ContentSteps h2 {
+    padding-top: 20px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.ContentSteps p {
+    padding: 10px;
+}
+@media(max-width: 600px){
+    #DivSteps {
+        width: 80%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .ContentSteps {
+        width: 80%;
+        margin-left: 10%;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 15px;
+    }
+}
+#Preco{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+}
+#DivPreco {
+    border-radius: 30px 0px 30px 0px;
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    background: linear-gradient(to right, #3e2c4d, #3e6061);
+}
+#DivPreco h1{
+    padding-top: 20px;
+}
+#DivPreco h2 {
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+#DivPreco button{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #05fc45;
+    width: 50%;
+    height: 35px;
+}
+#DivPreco img{
+    width: 80%;
+    margin-bottom: 30px;
+}
+footer {
+    text-align: center;
+    width: 100%;
+    background-color: #161616;
+}
+footer  img {
+    width: 150px;
+}
