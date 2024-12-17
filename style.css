@@ -9,7 +9,7 @@ body {
 #Section01{
     width: 100%;
     height: 100vh;
-    background-image: url(./assets/backgrund01.png);
+    background-image: url(./assets/backgrund01.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,7 +234,7 @@ body {
 #SectionJhon{
     width: 100%;
     height: auto;
-    background-image: url(./assets/johnbackgrund.png);
+    background-image: url(./assets/johnbackgrund.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -261,7 +261,7 @@ body {
     #SectionJhon{
         width: 100%;
         height: auto;
-        background-image: url(./assets/fundoJhonMobile.png);
+        background-image: url(./assets/fundoJhonMobile.jpeg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -288,7 +288,7 @@ body {
     padding-top: 180px;
     width: 100%;
     height: 100vh;
-    background-image: url(./assets/backPhone.png);
+    background-image: url(./assets/backPhone.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -298,7 +298,7 @@ body {
         padding-top: 180px;
         width: 100%;
         height: 100vh;
-        background-image: url(./assets/backphonemobille.png);
+        background-image: url(./assets/backphonemobille.jpeg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
